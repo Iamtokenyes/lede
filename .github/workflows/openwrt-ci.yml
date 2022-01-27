@@ -256,7 +256,7 @@ jobs:
           #CONFIG_SAMBA4_SERVER_NETBIOS=y
           #CONFIG_SAMBA4_SERVER_VFS=y
           
-          CONFIG_PACKAGE_luci-app-unblockmusic is no set
+          # CONFIG_PACKAGE_luci-app-unblockmusic is no set
 
           
           CONFIG_PACKAGE_luci-app-netspeedtest=y
