@@ -8,9 +8,16 @@
 name: openwrt-ci1
 
 on:
- push:
-    branches: 
-      - master
+ #push:
+ #   branches: 
+ #     - master
+ repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: true
+        default: 'true' 
   #schedule:
   #  - cron: 0 20 * * *
   #release:
